@@ -1,0 +1,144 @@
+/* Estilo general del body */
+body{
+    background-color: rgb(237, 224, 215); /* Requisito PAC: fondo claro */
+    color: #333; 
+    margin: 0; 
+    min-height: 100vh; /* Alto mínimo de toda la pantalla */
+    padding: 20px 0; /* Espacio arriba y abajo */
+    font-family: Calibri; /* Requisito PAC: Texto general en Calibri */
+    line-height: 1.6; 
+}
+
+/* Estilo para los títulos*/
+h1,h2{
+    text-align: center; /* Centrar texto */
+    padding: 10px; /* Espaciado interno */
+    font-family: Verdana, sans-serif; /* Requisito PAC: Títulos en Verdana */
+    margin: 0;
+    color:#c70039; 
+    text-transform: uppercase; /* Pone el texto en mayúsculas */
+}
+
+/* Estilo específico para el h1 principal */
+h1{
+    font-size: 3.5em; /* Tamaño de fuente más grande */
+    padding-bottom: 0; /* Quita espacio inferior */
+}
+
+/* Estilo específico para el h2 para unirlo con el h1 */
+h2{
+    margin-top: -10px; /* Sube el h2 para que esté más cerca del h1 */
+    padding-top: 0;
+}
+
+/* Estilo para el h3, el texto dentro del botón */
+h3{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    /* No le pongo fuente, así hereda Calibri del body*/
+}
+
+/* Estilo específico para el h1 de la página de conciertos. Lo hago más pequeño que el h1 principal, porque lleva más palabras*/
+.h1-conciertos {
+    font-size: 2.0em; /* Tamaño más pequeño */
+    line-height: 1.4; /* Interlineado para el salto de línea */
+}    
+
+/* Requisito PAC: Secciones con fondo blanco y bordes redondeados, se aplica a descripcion y entradas */
+.descripcion, .entradas{
+    background-color: white; /* Requisito PAC: Fondo blanco */
+    margin: 20px auto; 
+    padding: 25px; 
+    border-radius: 10px; /* Requisito PAC: Bordes redondeados */
+    width: 90%;
+    max-width: 800px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombra */
+}
+
+/* Estilo específico para el texto de descripción */
+.descripcion{
+   text-align: justify; /* Para que el texto quede alineado por ambos lados */
+}
+
+/* Requisito PAC: Imagen del grupo: centrada, 400px max, bordes redondeados*/
+.imagengrupo{
+    display: block; /* Para poder centrarla con márgenes */
+    margin: 10px auto 20px auto; /* Requisito PAC: Centrada */
+    width:  90%; 
+    max-width: 400px; /* Requisito PAC: Ancho máximo 400px */
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,1); /* Sombra */
+}
+
+/* Estilos del botón de enlace */
+.enlace{
+    display: block; 
+    width: 90%;
+    max-width: 300px; /* Ancho fijo para el botón */
+    margin: 40px auto; /* Centrado */
+    padding: 15px;
+    background-color: #c70039; /* Color principal */
+    border-radius: 10px; /* Bordes redondeados */
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    transition: transform 0.2s ease; 
+}
+
+/* Estilo para el h3 que está dentro del enlace */
+.enlace h3 {
+    color: white; /* Texto en blanco */
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+/* Efecto al pasar el ratón por encima del botón */
+.enlace:hover {
+    transform: scale(1.05); /* Lo hace un poquito más grande */
+}
+
+/* Estilo para el botón de volver (lo pone gris) */
+.enlace-volver {
+     background-color: #555; /* Color gris oscuro */
+}
+
+/* Estilos de la página de conciertos tabla */
+.conciertos {
+    text-align: center;
+    font-family: verdana; /* Fuente Verdana, requisito PAC en los títulos */
+}
+
+/* Contenedor de la tabla */
+.entradas {
+    overflow-x: auto; /* Añade scroll horizontal si la tabla no cabe en móviles */
+}
+
+/* Estilo general de la tabla */
+table{
+    width: 100%; /* Ocupa todo el ancho de la sección entradas */
+    border-collapse: collapse; 
+    margin-top: 20px;
+    font-family: Calibri, Arial, sans-serif; /* Requisito PAC: texto general */
+}
+
+/* Estilo de las celdas <th> <td> */
+th, td{
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 12px; /* Espaciado interno */
+    text-align: center;
+}
+
+/* Estilo solo para las celdas de la cabecera <th> */
+th{
+    background-color: #bdbdbd; /* Fondo gris claro */
+    font-family: Verdana, sans-serif; /* Requisito PAC: títulos en Verdana */
+}
+
+/* Alternar colores en las filas */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+

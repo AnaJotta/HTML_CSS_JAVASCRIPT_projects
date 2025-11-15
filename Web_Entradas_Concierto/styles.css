@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+
+
+}.título {
+    text-align: center;
+    padding: 20px;
+}
+
+.imagen {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 400px;
+    height: auto;
+    background-image: border-radius 50%;
+
+}
+
+.tabla {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+
+.tabla th,
+.tabla td {
+    border: 2px solid #660a5a;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.tabla th {
+   background: linear-gradient(135deg, #9c3382, #81C784);
+    color: white;
+    font-weight: bold;
+}
+
+
+.tabla tr:nth-child(even) {
+    background-color: #a53978; 
+}
+
+
+.tabla tr:hover {
+    background-color: #81C784;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+
+}
+
+input{
+    padding: 4px;
+    margin: 10px 0;
+    border: 2px solid #685d66;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    padding: 4px;
+    margin: 10px 0;
+    border: 2px solid #685d66;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-left: 40%;
+    padding: 10px;
+    background-color: #9c3382;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #7b1fa2;
+}

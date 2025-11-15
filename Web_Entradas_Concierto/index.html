@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPICEGIRLS</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+<body>
+    <header>
+    <h1 class="título">SPICEGIRLS</h1>
+    <img src="grupo.jpg" alt="imagen de SPICEGIRLS" class="imagen">
+
+     </header>
+
+     <section>
+
+
+    <p class="texto">SPICEGIRLS es un grupo de música pop británico formado en 1994. 
+        Conocidas por su estilo único y sus pegajosas canciones, 
+        se convirtieron en un fenómeno global durante la década de 1990.</p>
+
+
+    </section>
+
+    <section>
+        <h2><b>¡Próximos Conciertos!</b></h2>
+        <table class="tabla">
+            <tr>
+                <th>Fecha</th>
+                <th>Ciudad</th>
+                <th>País</th>
+                <th>Entradas</th>
+
+            </tr>    
+            <tr>
+                <td>15/06/2026</td>
+                <td>Madrid</td>
+                <td>España</td>
+                <td>65€</td>
+
+            </tr>
+            <tr>
+                <td>20/06/2026</td>
+                <td>Barcelona</td>
+                <td>España</td>
+                <td>70€</td>
+            </tr>
+            
+            <tr>
+                <td>05/07/2026</td>
+                <td>Berlin</td>
+                <td>Alemania</td>
+                <td>85€</td>
+            </tr>
+        </table>
+
+        <h2>COMPRA TUS ENTRADAS</h2>
+        <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+
+            <label for="fecha">Fecha y lugar del concierto:</label>
+            <select id="fecha" name="fecha" required>
+                <option value="Madrid">Madrid - 15/06/2026</option>
+                <option value="Barcelona">Barcelona - 20/06/2026</option>
+                <option value="Berlin">Berlin - 05/07/2026</option>
+            </select>
+
+            <label for="cantidad">Cantidad de entradas:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" max="10" required>
+
+            <label for= "categoria">Categoría de entrada:</label>
+
+            <select id="categoria" name="categoria" required>
+
+                <option value="General">General</option>
+                <option value="VIP">VIP</option>
+                <option value="Front Row">Front Row</option>
+            </select>
+
+            <p>Método de pago:</p>
+            <label>Tarjeta de Crédito<input type="radio" name="pago" value="Tarjeta de crédito"></label><br>
+            <label>Paypal<input type="radio" name="pago" value="PayPal"></label><br>
+            <label>Bizum<input type="radio" name="pago" value="Bizum"></label><br>
+            <br>
+            <label>
+                <input type="checkbox" id="terminos" name="terminos" required>
+                Acepto los términos y condiciones
+            </label>
+            <br>
+            <button type="submit">Comprar Entradas</button>
+        </form>
+    </section>
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Enlazamos la misma hoja de estilos que el index, así reutilizamos el código CSS para ambas páginas.-->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Fechas de Conciertos</title>
+</head>
+<body>
+    
+    <!-- Título h1 de la página de conciertos, le añadimos la clase h1-conciertos para poder hacerlo más pequeño desde el CSS -->
+    <h1 class="h1-conciertos"><i>Compra ya las entradas para el concierto de las</i><br><i>SPICE GIRLS</i></h1>
+    
+    <!-- Sección para la tabla de conciertos, la clase entradas tiene los mismos estilos que descripcion -->
+    <section class="entradas">
+    
+    <!-- Título h2 para la tabla -->
+    <h2 class="conciertos"><b>Fechas Tour España</b></h2>
+    
+    <table>
+        <!-- Fila de cabecera de la tabla -->
+        <tr>
+           
+           <th>Fechas</th>
+           <th>Ciudad</th> 
+           <th>Hora</th> 
+           <th>Precios</th> 
+        </tr>
+        
+        <!-- Fila 1 de datos del concierto en Madrid -->
+         <tr>
+           <td>08/11/2025</td> 
+           <td>Madrid</td> 
+           <td>20:30</td> 
+           <td>65€</td> 
+        </tr>
+        
+        <!-- Fila 2 de datos del concierto en Sevilla (esta es la fila a la que el CSS pintará de gris claro con el "nth-child(even)") -->
+        <tr class="sevilla">
+           <td>15/11/2025</td> 
+           <td>Sevilla</td> 
+           <td>21:00</td> 
+           <td>65€</td> 
+        </tr>
+        
+        <!-- Fila 3 de datos del Concierto en Barcelona -->
+         <tr>
+           <td>25/11/2025</td> 
+           <td>Barcelona</td> 
+           <td>20:00</td> 
+           <td>65€</td> 
+        </tr>
+    </table> 
+
+    </section> 
+
+    <!-- Enlace para volver a la página principal -->
+    <a href="index.html" class="enlace enlace-volver"><h3>&larr; Volver al inicio</h3></a>
+
+</body>
+</html>
